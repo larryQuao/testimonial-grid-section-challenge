@@ -1,0 +1,43 @@
+@import 'colors';
+
+
+@mixin profile-image-border1 {
+    border: 3px solid #A775F2;
+}
+@mixin profile-image-border2 {
+    border: 3px solid $primary-dark-gray-blue;
+}
+@mixin profile-image-border3 {
+    border: 3px solid $white;
+}
+@mixin profile-image-border4 {
+    border: 3px solid $primary-violet;
+}
+@mixin profile-image-border5 {
+    border: 3px solid $white;
+}
+
+.profile{
+    display: flex;
+    gap: 1rem;
+
+    .profile-details {
+        align-self: center;
+        .name {
+            padding-bottom: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .verify {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: $white-70;
+        }
+    }
+}
+
+// img {
+//     border-radius: 100%;
+//     width: 35px;
+// }
